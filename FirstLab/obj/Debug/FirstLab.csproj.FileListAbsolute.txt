@@ -1,0 +1,14 @@
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\bin\Debug\FirstLab.exe.config
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\bin\Debug\FirstLab.exe
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\bin\Debug\FirstLab.pdb
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.csprojResolveAssemblyReference.cache
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\MainWindow.g.cs
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\App.g.cs
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.cache
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.lref
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\MainWindow.baml
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.g.resources
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.Properties.Resources.resources
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.csproj.GenerateResource.Cache
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.exe
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.pdb
