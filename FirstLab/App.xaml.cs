@@ -13,5 +13,11 @@ namespace FirstLab
     /// </summary>
     public partial class App : Application
     {
+        //this connects binding
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            this.MainWindow.DataContext = new MainViewModel();
+        }
     }
 }
