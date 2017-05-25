@@ -34,7 +34,7 @@
             <RowDefinition Height="67*"/>
         </Grid.RowDefinitions>
         <Grid Name="Grid1" Grid.Row="0" Grid.ColumnSpan="3">
-            <Label Content="Создать Контакт" Margin="134,-10,122,10" FontSize="30" RenderTransformOrigin="1.08,0.435"/>
+            <Label Style="{DynamicResource UIhead}" Content="Создать Контакт" Margin="134,-10,122,10" FontSize="30" RenderTransformOrigin="1.08,0.435"/>
         </Grid>
         <Grid Name="Grid2"  Grid.Row="1" Margin="0,10,0,0" Grid.ColumnSpan="3">
             <Grid.RowDefinitions>
@@ -49,9 +49,9 @@
                     <ColumnDefinition Width="0.4*"/>
                     <ColumnDefinition Width="0.7*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" FontSize="25" Text="Фамилия" HorizontalAlignment="Left" Width="110" Height="49" VerticalAlignment="Bottom" Margin="10,0,0,0" />
+                <TextBlock Style="{DynamicResource UIwords}" Grid.Column="0" FontSize="25" Text="Фамилия" HorizontalAlignment="Left" Width="110" Margin="10,-7,0,0" />
                 <TextBox x:Name="SurnameTextBox" Grid.Column="1" Margin="10,0,10,10" Text="{Binding Surname, Mode=TwoWay, ValidatesOnDataErrors=True }" Height="29" VerticalAlignment="Bottom" TextChanged="SurnameTextBox_TextChanged" />
-                <TextBlock Grid.Column="2" FontSize="25" Text="Имя" Margin="0,0,158,0" Grid.ColumnSpan="2" Height="49" VerticalAlignment="Bottom" RenderTransformOrigin="0.875,0.249" />
+                <TextBlock Style="{DynamicResource UIwords}" Grid.Column="2" FontSize="25" Text="Имя" Margin="0,0,158,0" Grid.ColumnSpan="2" Height="49" VerticalAlignment="Bottom" RenderTransformOrigin="0.875,0.249" />
                 <TextBox x:Name="SecondNameTextBox" Grid.Column="2" Height="29" Text="{Binding Secondname, Mode=TwoWay ,ValidatesOnDataErrors=True }" VerticalAlignment="Bottom" Margin="63,0,43,10" Grid.ColumnSpan="2" TextChanged="SecondNameTextBox_TextChanged"/>
             </Grid>
             <Grid Grid.Row="1">
@@ -60,7 +60,7 @@
                     <ColumnDefinition Width="98*"/>
                     <ColumnDefinition Width="45*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" FontSize="25" Text="Отчество" HorizontalAlignment="Left" Width="110" Height="49" VerticalAlignment="Bottom" Margin="10,-7,0,0" />
+                <TextBlock Style="{DynamicResource UIwords}" Grid.Column="0" FontSize="25" Text="Отчество" HorizontalAlignment="Left" Width="110" Height="49" VerticalAlignment="Bottom" Margin="10,-7,0,0" />
                 <TextBox x:Name="OtherNameTextBox" Text="{Binding othernames, Mode=TwoWay ,ValidatesOnDataErrors=True}" Margin="10,0,25,10" Grid.Column="1" TextChanged="OtherNameTextBox_TextChanged"/>
 
             </Grid>
@@ -72,7 +72,7 @@
                 <RowDefinition Height=" 0.3*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Margin="10,-10,115,10">
-                <Label Content="Телефон" Margin="0,10,289,-10" FontSize="28" FontWeight="Bold" RenderTransformOrigin="1.08,0.435"/>
+                <Label Style="{DynamicResource UIhead}" Content="Телефон" Margin="0,10,289,-10" FontSize="28" FontWeight="Bold" RenderTransformOrigin="1.08,0.435"/>
             </Grid>
 
             <Grid Grid.Row="1">
@@ -84,8 +84,8 @@
                 <TextBox x:Name="Number1TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,10" Text="{Binding Number, Mode=TwoWay,ValidatesOnDataErrors=True}" />
 
 
-                <ComboBox x:Name="ComboBoxNumber1TextBox" Margin="10,22,59,0" Grid.ColumnSpan="2" Grid.Column="1" Height="31" VerticalAlignment="Top" 
-                         ItemsSource="{Binding HomeNumber}" ></ComboBox>
+                <ComboBox x:Name="ComboBoxNumber1TextBox" Margin="10,22,59,9" Grid.ColumnSpan="2" Grid.Column="1" 
+                         ItemsSource="{Binding HomeNumber}" />
                 <TextBlock Grid.Column="2" Text="-" FontWeight="Bold" FontSize="35" Height="34" VerticalAlignment="Bottom" Margin="37,0,5,12" RenderTransformOrigin="0.5,0.5">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
@@ -100,9 +100,9 @@
             </Grid>
             <Grid Grid.Row="2" Margin="0,-10,0,10">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.7*"/>
-                    <ColumnDefinition Width="0.7*"/>
-                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="242*"/>
+                    <ColumnDefinition Width="241*"/>
+                    <ColumnDefinition Width="69*"/>
                 </Grid.ColumnDefinitions>
                 <TextBox x:Name="Number2TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,7" Text="{Binding Number, Mode=TwoWay,ValidatesOnDataErrors=True}" />
                 <ComboBox x:Name="ComboBox2" Grid.Column="1" Margin="10,25,59,7" Grid.ColumnSpan="2"
@@ -135,8 +135,8 @@
                     <ColumnDefinition Width="0.7*"/>
                     <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="Number3TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,35" />
-                <ComboBox x:Name="ComboBox3" Grid.Column="1" Margin="10,5,59,34" Grid.ColumnSpan="2"
+                <TextBox x:Name="Number3TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,40" />
+                <ComboBox x:Name="ComboBox3" Grid.Column="1" Margin="10,0,59,40" Grid.ColumnSpan="2"
                            ItemsSource="{Binding Years}"
                            FontSize="20" FontWeight="ExtraLight" Foreground="Crimson" VerticalAlignment="Center"
                            Height="30"
@@ -160,7 +160,7 @@
                     <ColumnDefinition Width="11*"/>
                     <ColumnDefinition Width="58*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="CityTextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="31" VerticalAlignment="Bottom" Margin="10,0,0,34"  Text="{Binding City, Mode=TwoWay, ValidatesOnDataErrors=True }" TextChanged="CityTextBox_TextChanged"/>
+                <TextBox x:Name="CityTextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="31" VerticalAlignment="Bottom" Margin="10,0,0,36"  Text="{Binding City, Mode=TwoWay, ValidatesOnDataErrors=True }" TextChanged="CityTextBox_TextChanged"/>
                 <ComboBox  x:Name="___Countries_"  Grid.Column="1" Margin="10,3,0.667,34" Grid.ColumnSpan="2" 
                          ItemsSource="{Binding countries}" 
                          FontFamily="new romans" FontSize="20" 
@@ -180,17 +180,20 @@
                 </TextBlock>
             </Grid>
         </Grid>
-        <Grid Name="Grid5" Grid.Row="4" Grid.ColumnSpan="3">
+        <Grid Name="Grid5" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,150,0,32" Grid.RowSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height=" 0.2*"/>
-                <RowDefinition Height=" 0.3*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="26*"/>
+                <RowDefinition Height="0*"/>
+                <RowDefinition Height="39*"/>
+                <RowDefinition Height="0*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Margin="10,-10,115,10">
+            <Grid Grid.Row="0" Margin="10,-10,115,10" Grid.RowSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="69*"/>
                     <ColumnDefinition Width="358*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="+" Margin="0,-33,289,16" FontSize="25" FontWeight="Bold" RenderTransformOrigin="1.08,0.435" Grid.ColumnSpan="2">
+                <TextBlock Text="+" Margin="8,-57,353,44" FontSize="25" FontWeight="Bold" RenderTransformOrigin="1.08,0.435" Grid.ColumnSpan="2">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="-1"/>
@@ -201,37 +204,11 @@
                     </TextBlock.RenderTransform>
                 </TextBlock>
             </Grid>
-            <Grid Grid.Row="1" Margin="10,10,-10,-10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="127*"/>
-                    <ColumnDefinition Width="18*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="6*"/>
-                    <ColumnDefinition Width="125*"/>
-                    <ColumnDefinition Width="127*"/>
-                    <ColumnDefinition Width="61*"/>
-                    <ColumnDefinition Width="15*"/>
-                    <ColumnDefinition Width="6*"/>
-                    <ColumnDefinition Width="67*"/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="SaveButton_"  Grid.Column="0" Margin="37,-27,97,37" RenderTransformOrigin="0.532,-0.316" Grid.ColumnSpan="19" Background="#FF43D418" Click="SaveButton__Click" >Сохранить
-                </Button>
-                <Button x:Name="___CancelButton_1" Margin="93,-27,43,37" Grid.Column="19" Background="#FFF3240F" Grid.ColumnSpan="5" Click="___CancelButton_1_Click">Отмен</Button>
-            </Grid>
+
+            <Button x:Name="SaveButton" Style="{DynamicResource UISaveButton}" Click="SaveButton__Click" Grid.RowSpan="4" RenderTransformOrigin="0.5,0.5" Margin="0,10,98,-20" Grid.Row="1"   />
+
+            <Button x:Name="___CancelButton_1" Style="{DynamicResource UICancelButton}"  Click="___CancelButton_1_Click" Margin="302,0,-98,-6" Grid.Row="3"/>
+
         </Grid>
     </Grid>
 

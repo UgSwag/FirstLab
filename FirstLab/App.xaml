@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:FirstLab"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries >
+                <ResourceDictionary Source="ResourceDictionary/Brushes.xaml"/>
+                <ResourceDictionary Source="ResourceDictionary/ButtonResource.xaml"/>
+                <ResourceDictionary Source="ResourceDictionary/TextBoxResources and TextBlock.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

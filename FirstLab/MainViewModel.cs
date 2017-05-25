@@ -79,8 +79,8 @@ namespace FirstLab
             this.othernames = othernames;
             countries = new List<string>()
             {
-                 "Uganda","Kenya","Tanzania","Rwanda",
-                "Ghana","Nigeria","Zambia","SouthAfrica",
+                 "China","USA","Japan","Kitae",
+                "Ugoslavia","Nigeria","Zambia","SouthAfrica",
                 "Burundi","DRC","Sudan","Ethopia","Namibia"
             };
             HomeNumber = new List<string>()

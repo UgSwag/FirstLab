@@ -11,4 +11,63 @@ a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\Fi
 a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.csproj.GenerateResource.Cache
 a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.exe
 a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.pdb
-a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.csprojResolveAssemblyReference.cache
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\ResourceDictionary\Brushes.baml
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\App.baml
+a:\onedrive\documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\ResourceDictionary\ButtonResource.baml
+A:\OneDrive\Documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\FirstLab.csprojResolveAssemblyReference.cache
+A:\OneDrive\Documents\visual studio 2015\Projects\FirstLab\FirstLab\obj\Debug\ResourceDictionary\TextBoxResources and TextBlock.baml
+E:\FirstLab\FirstLab\bin\Debug\FirstLab.exe.config
+E:\FirstLab\FirstLab\obj\Debug\FirstLab.exe
+E:\FirstLab\FirstLab\obj\Debug\FirstLab.pdb
+E:\FirstLab\FirstLab\bin\Debug\FirstLab.exe
+E:\FirstLab\FirstLab\bin\Debug\FirstLab.pdb
+E:\FirstLab\FirstLab\obj\Debug\FirstLab.csprojResolveAssemblyReference.cache
+E:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\Brushes.baml
+E:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\ButtonResource.baml
+E:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\TextBoxResources and TextBlock.baml
+E:\FirstLab\FirstLab\obj\Debug\MainWindow.g.cs
+E:\FirstLab\FirstLab\obj\Debug\App.g.cs
+E:\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.cache
+E:\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.lref
+E:\FirstLab\FirstLab\obj\Debug\App.baml
+E:\FirstLab\FirstLab\obj\Debug\MainWindow.baml
+E:\FirstLab\FirstLab\obj\Debug\FirstLab.g.resources
+E:\FirstLab\FirstLab\obj\Debug\FirstLab.Properties.Resources.resources
+E:\FirstLab\FirstLab\obj\Debug\FirstLab.csproj.GenerateResource.Cache
+F:\FirstLab\FirstLab\bin\Debug\FirstLab.exe.config
+F:\FirstLab\FirstLab\obj\Debug\FirstLab.exe
+F:\FirstLab\FirstLab\obj\Debug\FirstLab.pdb
+F:\FirstLab\FirstLab\bin\Debug\FirstLab.exe
+F:\FirstLab\FirstLab\bin\Debug\FirstLab.pdb
+F:\FirstLab\FirstLab\obj\Debug\FirstLab.csprojResolveAssemblyReference.cache
+F:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\Brushes.baml
+F:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\ButtonResource.baml
+F:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\TextBoxResources and TextBlock.baml
+F:\FirstLab\FirstLab\obj\Debug\MainWindow.g.cs
+F:\FirstLab\FirstLab\obj\Debug\App.g.cs
+F:\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.cache
+F:\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.lref
+F:\FirstLab\FirstLab\obj\Debug\App.baml
+F:\FirstLab\FirstLab\obj\Debug\MainWindow.baml
+F:\FirstLab\FirstLab\obj\Debug\FirstLab.g.resources
+F:\FirstLab\FirstLab\obj\Debug\FirstLab.Properties.Resources.resources
+F:\FirstLab\FirstLab\obj\Debug\FirstLab.csproj.GenerateResource.Cache
+G:\FirstLab\FirstLab\bin\Debug\FirstLab.exe.config
+G:\FirstLab\FirstLab\obj\Debug\FirstLab.exe
+G:\FirstLab\FirstLab\obj\Debug\FirstLab.pdb
+G:\FirstLab\FirstLab\bin\Debug\FirstLab.exe
+G:\FirstLab\FirstLab\bin\Debug\FirstLab.pdb
+G:\FirstLab\FirstLab\bin\Debug\MySql.Data.dll
+G:\FirstLab\FirstLab\obj\Debug\FirstLab.csprojResolveAssemblyReference.cache
+G:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\Brushes.baml
+G:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\ButtonResource.baml
+G:\FirstLab\FirstLab\obj\Debug\ResourceDictionary\TextBoxResources and TextBlock.baml
+G:\FirstLab\FirstLab\obj\Debug\MainWindow.g.cs
+G:\FirstLab\FirstLab\obj\Debug\App.g.cs
+G:\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.cache
+G:\FirstLab\FirstLab\obj\Debug\FirstLab_MarkupCompile.lref
+G:\FirstLab\FirstLab\obj\Debug\App.baml
+G:\FirstLab\FirstLab\obj\Debug\MainWindow.baml
+G:\FirstLab\FirstLab\obj\Debug\FirstLab.g.resources
+G:\FirstLab\FirstLab\obj\Debug\FirstLab.Properties.Resources.resources
+G:\FirstLab\FirstLab\obj\Debug\FirstLab.csproj.GenerateResource.Cache
