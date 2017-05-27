@@ -36,35 +36,36 @@ namespace FirstLab
 
         private void SaveButton__Click(object sender, RoutedEventArgs e)
         {
-            string constring = "server=localhost; database=savemycontacts; user id=root; password=1994derrick";
-            string query = "insert into savemycontacts.custormers(Phone,SurName,FirstName,LastName,City,Phone2,Country,Year) value('" + this.Number1TextBox.Text + "','" + this.SurnameTextBox.Text + "','" + this.SecondNameTextBox.Text + "','" + this.OtherNameTextBox.Text + "','"+this.CityTextBox.Text+"','"+this.Number2TextBox.Text+"','"+this.___Countries_.SelectedItem+"','"+this.ComboBox3.SelectedItem+"');";
-            MySqlConnection connection = new MySqlConnection(constring);
-            MySqlCommand command = new MySqlCommand(query, connection);
-            MySqlDataReader Reader;
-            try
+            //var a = SurnameTextBox;
+            //try
+            // {
+
+            /*if ((SurnameTextBox != null) && (SecondNameTextBox != null) && (OtherNameTextBox != null))
             {
+                string constring = "server=localhost; database=savemycontacts; user id=root; password=1994derrick";
+                string query = "insert into savemycontacts.custormers(Phone,SurName,FirstName,LastName,City,Phone2,Country,Year) value('" + this.Number1TextBox.Text + "','" + this.SurnameTextBox.Text + "','" + this.SecondNameTextBox.Text + "','" + this.OtherNameTextBox.Text + "','" + this.CityTextBox.Text + "','" + this.Number2TextBox.Text + "','" + this.___Countries_.SelectedItem + "','" + this.ComboBox3.SelectedItem + "');";
+                MySqlConnection connection = new MySqlConnection(constring);
+                MySqlCommand command = new MySqlCommand(query, connection);
+                MySqlDataReader Reader;
                 connection.Open();
                 Reader = command.ExecuteReader();
-                if ((SecondNameTextBox == null) && (SecondNameTextBox == null) && (OtherNameTextBox == null))
-                {
+                MessageBox.Show("Contact well saved, you may proceed");
+                Reader.Read();
 
-                    MessageBox.Show("Check your entries");
-                }
-                else
-                {
-                    MessageBox.Show("Contact well saved, you may proceed");
-                    while (Reader.Read())
-                    {
-
-                    }
-                    
-                }
-                
             }
+            else
+            {
+
+                MessageBox.Show("Check your entries");
+            }
+
+            
+                
+            /*}
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
           
            
            

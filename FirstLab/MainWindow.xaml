@@ -4,9 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstLab"
-        mc:Ignorable="d"
-        
-        Title="FirstLab" Height="750.43" Width="552.461" MinHeight="601.776" MaxHeight="601.776" MinWidth="558.461" MaxWidth="558.461" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        mc:Ignorable="d" Title="FirstLab" Height="750.43" Width="552.461" MinHeight="601.776" MaxHeight="601.776" MinWidth="558.461" MaxWidth="558.461" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Resources>
 
         <Style TargetType="TextBox">
@@ -17,6 +15,9 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
+    <Window.DataContext>
+        <local:MainViewModel></local:MainViewModel>
+    </Window.DataContext>
     <Grid Name="MainGrid" >
         <Grid.Background>
             <ImageBrush ImageSource="Photos/Infotainment_2017_10.png" Stretch="UniformToFill"/>
@@ -81,11 +82,13 @@
                     <ColumnDefinition Width="0.7*"/>
                     <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="Number1TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,10" Text="{Binding Number, Mode=TwoWay,ValidatesOnDataErrors=True}" />
+                <TextBox x:Name="Number1TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,10" Text="{Binding Number1, Mode=TwoWay,ValidatesOnDataErrors=True}" />
 
 
                 <ComboBox x:Name="ComboBoxNumber1TextBox" Margin="10,22,59,9" Grid.ColumnSpan="2" Grid.Column="1" 
-                         ItemsSource="{Binding HomeNumber}" />
+                         ItemsSource="{Binding HomeNumber}" 
+                         SelectedItem="{Binding HomeNUmber_Selected}"
+                          />
                 <TextBlock Grid.Column="2" Text="-" FontWeight="Bold" FontSize="35" Height="34" VerticalAlignment="Bottom" Margin="37,0,5,12" RenderTransformOrigin="0.5,0.5">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
@@ -104,9 +107,9 @@
                     <ColumnDefinition Width="241*"/>
                     <ColumnDefinition Width="69*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="Number2TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,7" Text="{Binding Number, Mode=TwoWay,ValidatesOnDataErrors=True}" />
+                <TextBox x:Name="Number2TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,7" Text="{Binding Number2, Mode=TwoWay,ValidatesOnDataErrors=True}" />
                 <ComboBox x:Name="ComboBox2" Grid.Column="1" Margin="10,25,59,7" Grid.ColumnSpan="2"
-                          ItemsSource="{Binding HomeNumber}" ></ComboBox>
+                          ItemsSource="{Binding HomeNumber}" SelectedItem="{Binding HomeNUmber_Selected}" ></ComboBox>
                 <TextBlock Grid.Column="2" Text="-" FontWeight="Bold" FontSize="35" Height="35" VerticalAlignment="Bottom" Margin="38,0,-21,13" RenderTransformOrigin="1.228,0.399">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
@@ -125,9 +128,9 @@
                 <RowDefinition Height=" 0.3*"/>
                 <RowDefinition Height=" 0.3*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Margin="10,0,179,0">
-                <Label Content="+" Margin="0,-10,289,10" FontSize="28" FontWeight="Bold" RenderTransformOrigin="1.08,0.435"/>
-            </Grid>
+           <!--<Grid Grid.Row="0" Margin="10,0,179,0">
+                <Label Content="+" Margin="0,-10,289,10" FontSize="28" FontWeight="Bold" RenderTransformOrigin="1.08,0.435" Height="46" VerticalAlignment="Bottom"/>
+            </Grid>-->
 
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -138,6 +141,7 @@
                 <TextBox x:Name="Number3TextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="30" VerticalAlignment="Bottom" Margin="10,0,0,40" />
                 <ComboBox x:Name="ComboBox3" Grid.Column="1" Margin="10,0,59,40" Grid.ColumnSpan="2"
                            ItemsSource="{Binding Years}"
+                            SelectedItem="{Binding Selected_year}"
                            FontSize="20" FontWeight="ExtraLight" Foreground="Crimson" VerticalAlignment="Center"
                            Height="30"
                            ></ComboBox>
@@ -163,6 +167,7 @@
                 <TextBox x:Name="CityTextBox" Grid.Column="0"  HorizontalAlignment="Left" Width="222" Height="31" VerticalAlignment="Bottom" Margin="10,0,0,36"  Text="{Binding City, Mode=TwoWay, ValidatesOnDataErrors=True }" TextChanged="CityTextBox_TextChanged"/>
                 <ComboBox  x:Name="___Countries_"  Grid.Column="1" Margin="10,3,0.667,34" Grid.ColumnSpan="2" 
                          ItemsSource="{Binding countries}" 
+                           SelectedItem="{Binding Selected_country}"
                          FontFamily="new romans" FontSize="20" 
                          FontWeight="Light" FontStretch="Medium"
                          Foreground="Crimson"
@@ -188,24 +193,9 @@
                 <RowDefinition Height="39*"/>
                 <RowDefinition Height="0*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Margin="10,-10,115,10" Grid.RowSpan="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="69*"/>
-                    <ColumnDefinition Width="358*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Text="+" Margin="8,-57,353,44" FontSize="25" FontWeight="Bold" RenderTransformOrigin="1.08,0.435" Grid.ColumnSpan="2">
-                    <TextBlock.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleY="-1"/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </TextBlock.RenderTransform>
-                </TextBlock>
-            </Grid>
+            
 
-            <Button x:Name="SaveButton" Style="{DynamicResource UISaveButton}" Click="SaveButton__Click" Grid.RowSpan="4" RenderTransformOrigin="0.5,0.5" Margin="0,10,98,-20" Grid.Row="1"   />
+            <Button x:Name="SaveButton" Style="{DynamicResource UISaveButton}" Command="{Binding Saved, Mode=TwoWay}" CommandParameter="{Binding}"  Grid.RowSpan="4" RenderTransformOrigin="0.5,0.5" Margin="0,10,98,-20" Grid.Row="1"   />
 
             <Button x:Name="___CancelButton_1" Style="{DynamicResource UICancelButton}"  Click="___CancelButton_1_Click" Margin="302,0,-98,-6" Grid.Row="3"/>
 
